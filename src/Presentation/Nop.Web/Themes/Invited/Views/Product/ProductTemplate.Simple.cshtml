@@ -47,6 +47,11 @@
     @await Html.PartialAsync("_ProductBreadcrumb", Model.Breadcrumb)
 </div>
 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ProductDetailsAfterBreadcrumb, additionalData = Model })
+<style>
+    .container{
+        width:100%;
+    }
+</style>
 <div class="page product-details-page">
     <div class="page-body">
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ProductDetailsTop, additionalData = Model })
@@ -54,12 +59,12 @@
             <div itemscope itemtype="http://schema.org/Product" data-productid="@Model.Id">
                 <div class="product-essential">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ProductDetailsEssentialTop, additionalData = Model })
                             <!--product pictures-->
                             @await Html.PartialAsync("_ProductDetailsPictures", Model)
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-6">
                             @await Html.PartialAsync("_Discontinued", Model)
                             <div class="overview">
                                 <div class="product-name panel-heading">

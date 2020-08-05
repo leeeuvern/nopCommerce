@@ -695,12 +695,12 @@ a.eu-cookie-privacyinfo-tag{color:#B80709 !important;text-decoration:underline;}
 
 /* NOTIFICATIONS */
 .bar-notification{display:none;left:0;position:fixed;top:0px;width:100%;z-index:1000000;}
-.bar-notification.success{background:#4bb07a;color:#35435dFFF;margin:0 0 10px;}
-.bar-notification.error{background:#e4444c;color:#35435dFFF;margin:0 0 10px;}
+.bar-notification.success{background:#4bb07a;color:#35435d;margin:0 0 10px;}
+.bar-notification.error{background:#e4444c;color:#35435d;margin:0 0 10px;}
 .bar-notification .close{background:url(../images/ico-close-notification-bar.png) no-repeat;width:20px;height:20px;float:right;margin:25px 10px 0px 0px;cursor:pointer;position:absolute;top:0;right:0;}
 .bar-notification p.content{padding:20px 25px;margin:5px 0px;text-align:center;}
-.bar-notification p.content a{text-decoration:underline;color:#35435dFFF;}
-.bar-notification p.content a:hover{text-decoration:none;color:#35435dFFF;}
+.bar-notification p.content a{text-decoration:underline;color:#35435d;}
+.bar-notification p.content a:hover{text-decoration:none;color:#35435d;}
 .bar-notification.error p.content {margin:5px 0px;padding:20px 25px;text-align:center;font-size:14px;}
 
 
@@ -999,10 +999,18 @@ a.eu-cookie-privacyinfo-tag{color:#B80709 !important;text-decoration:underline;}
 .wishlist-page .panel > .table-bordered > tbody > tr:last-child > td,.order-summary-content .panel > .table-bordered > tbody > tr:last-child > td{border-bottom:1px solid #ddd;}
 .order-summary-content .update-continue-button{margin:30px 0px;overflow:hidden;}
 .order-summary-content .update-continue-button .update-cart,.order-summary-content .update-continue-button .continue-shopping{float:left;margin-left:20px}
-.order-summary-content .update-continue-button .continue-shopping-button{background:url(../images/white-product-cart-icon.png) no-repeat 20px center #35435d;padding-left:50px;text-transform:uppercase;}
+.order-summary-content .update-continue-button .continue-shopping-button{background:url(../images/white-product-cart-icon.png) no-repeat 20px center #cc9900;padding-left:50px;text-transform:uppercase;}
 .order-summary-content .update-continue-button .continue-shopping-button:hover{background:url(../images/white-product-cart-icon.png) no-repeat 20px center #35435d;}
-.wishlist-page .buttons .common-buttons .update-wishlist-button,.order-summary-content .update-continue-button .update-cart-button{background:url(../images/shopping-cart-update-icon.png) no-repeat 20px 12px #35435d;padding-left:45px;text-transform:uppercase;}
+.wishlist-page .buttons .common-buttons .update-wishlist-button,.order-summary-content .update-continue-button .update-cart-button{background:url(../images/shopping-cart-update-icon.png) no-repeat 20px 12px #cc9900;padding-left:45px;text-transform:uppercase;}
 .wishlist-page .buttons .common-buttons .update-wishlist-button:hover,.order-summary-content .update-continue-button .update-cart-button:hover{background:url(../images/shopping-cart-update-icon.png) no-repeat 20px 12px #35435d;}
+
+.order-summary-content .apply-discount-coupon-code-button{background:#cc9900;}
+.order-summary-content .apply-discount-coupon-code-button:hover{background:#35435d;}
+.order-summary-content .apply-gift-card-coupon-code-button{background:#cc9900;}
+.order-summary-content .apply-gift-card-coupon-code-button:hover{background:#35435d;}
+.order-summary-content .checkout-new{background:#cc9900;}
+.order-summary-content .checkout-new:hover{background:#35435d;}
+
 .order-summary-content .buttons.checkout-attribute{margin-bottom:20px;float:left;width:100%;}
 .cart-collaterals,.totals,.order-summary-content .buttons{clear: both;}
 .order-summary-content .coupon-box .message,.order-summary-content .giftcard-box .message{font-size:10px;color:#a94442; background:#f2dede;margin:10px 0px 0px;clear:both;}
