@@ -67,11 +67,29 @@
                                         @Model.Name
                                     </h1>
                                 </div>
-                                <!--short description-->
-                                @if (!string.IsNullOrEmpty(Model.ShortDescription))
+                             
+                                @if (!string.IsNullOrEmpty(Model.FullDescription))
                                 {
-                                    <div class="short-description">
-                                        @Html.Raw(Model.ShortDescription)
+                                    <div class="full-description tab-pane fade in active" id="description" itemprop="description">
+                                        @Html.Raw(Model.FullDescription)
+                                    </div>
+                                }
+                                @if (Model.ProductSpecifications.Count > 0)
+                                {
+                                    <div class="product-specification tab-pane fade active" id="specification">
+                                        @await Html.PartialAsync("_ProductSpecifications", Model.ProductSpecifications)
+                                    </div>
+                                }
+                                @if (Model.ProductTags.Count > 0)
+                                {
+                                    <div class="product-tags tab-pane fade active" id="tags">
+                                        @await Html.PartialAsync("_ProductTags", Model.ProductTags)
+                                    </div>
+                                }
+                                @if (Model.TierPrices.Count > 0)
+                                {
+                                    <div class="product-tierprices tab-pane fade active" id="tierprices">
+                                        @await Html.PartialAsync("_ProductTierPrices", Model.TierPrices)
                                     </div>
                                 }
                                 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ProductDetailsOverviewTop, additionalData = Model })
@@ -134,44 +152,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-details-tabs">
-                        <ul class="nav nav-tabs">
-                            @if (!string.IsNullOrEmpty(Model.FullDescription))
-                            {
-                                <li class="active"><a href="#description" data-toggle="tab">@T("account.vendorinfo.description")</a></li>
-                            }
-                            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ProductDetailsEssentialBottom, additionalData = Model })
-                            @if (Model.ProductSpecifications.Count > 0)
-                            {
-                                <li><a href="#specification" data-toggle="tab">@T("Products.Specs")</a></li>
-                            }
-                            @if (Model.ProductTags.Count > 0)
-                            {
-                                <li><a href="#tags" data-toggle="tab">@T("Products.Tags")</a></li>
-                            }
-                            @if (Model.TierPrices.Count > 0)
-                            {
-                                <li><a href="#tierprices" data-toggle="tab">@T("Tier Prices")</a></li>
-                            }
-                        </ul>
-                        <div class="tab-content">
-                            @if (!string.IsNullOrEmpty(Model.FullDescription))
-                            {
-                                <div class="full-description tab-pane fade in active" id="description" itemprop="description">
-                                    @Html.Raw(Model.FullDescription)
-                                </div>
-                            }
-                            <div class="product-specification tab-pane fade" id="specification">
-                                @await Html.PartialAsync("_ProductSpecifications", Model.ProductSpecifications)
-                            </div>
-                            <div class="product-tags tab-pane fade" id="tags">
-                                @await Html.PartialAsync("_ProductTags", Model.ProductTags)
-                            </div>
-                            <div class="product-tierprices tab-pane fade" id="tierprices">
-                                @await Html.PartialAsync("_ProductTierPrices", Model.TierPrices)
-                            </div>
-                        </div>
-                    </div>
+                    
 
                 </div>
                 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ProductDetailsBeforeCollateral, additionalData = Model })

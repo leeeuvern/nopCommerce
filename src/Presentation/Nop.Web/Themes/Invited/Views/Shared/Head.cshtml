@@ -27,7 +27,7 @@
     {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/wristwear-styles-responsive.css");
-        Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/wristwear-styles.css");
+        Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/wristwear-styles.css?{DateTime.Now.ToString("yyyyMMddHHmmssfff", System.Globalization.CultureInfo.InvariantCulture)}");
         Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/font-awesome.min.css");
         Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/bootstrap.min.css");
         Html.AppendCssFileParts($"~/Themes/{themeName}/Content/css/owl.carousel.min.css");
