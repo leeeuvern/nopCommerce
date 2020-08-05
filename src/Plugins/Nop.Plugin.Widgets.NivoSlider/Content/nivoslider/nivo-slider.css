@@ -9,17 +9,20 @@
  
 /* The Nivo Slider styles */
 .nivoSlider {
-	position:relative;
-	width:100%;
-	height:auto;
-	overflow: hidden;
+  position: relative;
+  max-width: 1170px;
+  height: auto;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
-.nivoSlider img {
-	position:absolute;
-	top:0px;
-	left:0px;
-	max-width: none;
-}
+  .nivoSlider img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 1170px !important;
+    max-height: 450px !important;
+  }
 .nivo-main-image {
 	display: block !important;
 	position: relative !important; 
@@ -61,22 +64,22 @@
 
 /* Caption styles */
 .nivo-caption {
-	position:absolute;
-	left:0px;
-	bottom:0px;
-	background:#000;
-	color:#fff;
-	width:100%;
-	z-index:8;
-	padding: 5px 10px;
-	opacity: 0.8;
-	overflow: hidden;
-	display: none;
-	-moz-opacity: 0.8;
-	filter:alpha(opacity=8);
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;         /* Opera/IE 8+ */
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #35435d;
+  color: #fff;
+  width: 100%;
+  z-index: 8;
+  padding: 5px 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  display: none;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=8);
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
 }
 .nivo-caption p {
 	padding:5px;
