@@ -41,7 +41,7 @@ input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focu
 .header-upper{background:#F8F8F8;box-shadow:0px 0px 3px #999;-webkit-box-shadow: 0px 0px 3px #999;-moz-box-shadow: 0px 0px 3px #999;height:45px;border-bottom:0px solid #33393e;}
 .currency-selector,.language-selector{float:left;margin:10px 8px 0px 0px;}
 .language-selector ul li {display: inline-block;padding: 0 5px;}
-.header-selectors-wrapper select{background:#F8F8F8 url("/Themes/WristwearTheme/Content/images/down-caret.png") no-repeat scroll right center !important;color:#35435d;width:86px;margin-top:0px !important;padding:0px 5px !important;height:26px;font-size:12px;border:none !important;-moz-appearance:none;-webkit-appearance:none;}
+.header-selectors-wrapper select{background:#f6f5f1 url("/Themes/WristwearTheme/Content/images/down-caret.png") no-repeat scroll right center !important;color:#35435d;width:86px;margin-top:0px !important;padding:0px 5px !important;height:26px;font-size:12px;border:none !important;-moz-appearance:none;-webkit-appearance:none;}
 .header-links-wrapper .admin-header-links{display:none !important;}
 .admin-header-links{display:block !important;padding:5px 0;}
 .header-links-wrapper .header-top-right{float:right;width:auto;position:relative;}
@@ -708,7 +708,7 @@ a.eu-cookie-privacyinfo-tag{color:#B80709 !important;text-decoration:underline;}
 
 /* PRODUCT DETAILS PAGE STYLE */
 .product-details-page .overview{float:left; width:100%;}
-.product-collateral{margin-bottom:10px;clear:both;}
+.product-collateral{margin-bottom:10px;clear:both;padding:50px;}
 .product-details-page .gallery .picture{text-align:center;margin-bottom:20px;background:#ededed;}
 .product-details-page .thumb-popup-link {border:2px solid #ddd;display:inline-block;margin-bottom:20px;margin-right:5px;padding:5px;width:100px;height:100px;cursor:pointer;}
 .product-details-page .thumb-popup-link:hover{border:2px solid #35435d;}
@@ -1872,7 +1872,7 @@ button:hover
 .lt-ie10 select{background:#fff !important;border:1px solid #ddd;}
 .lt-ie10 .footer-upper .column ul li a:hover,.lt-ie10 .footer-upper .column ul li a:focus{margin-left:0px;}
 .lt-ie9 .header-selectors-wrapper select{padding:5px 0px 5px 5px !important;}
-.lt-ie9 .header-selectors-wrapper select{border:1px solid #33393e !important;background:#F8F8F8 !important;}
+.lt-ie9 .header-selectors-wrapper select{border:1px solid #33393e !important;background:#f6f5f1 !important;}
 
 /* IE9 and IE10 STYLE */
 .lt-ie11 .login-page .checkbox input[type="checkbox"]{margin-left:15px;min-height:20px;}
@@ -1886,7 +1886,7 @@ button:hover
 .lt-ie11 .login-page .checkbox .remember-text{padding-left:35px;}
 .lt-ie11 .customer-info-page .date-birth-text > SELECT,.eq-ie11 .customer-info-page .date-birth-text > SELECT,.lt-ie11 .registration-page .date-birth-text > SELECT,.eq-ie11 .registration-page .date-birth-text > SELECT{float:left;}
 .lt-ie11 .customer-info-page .date-birth-text .field-validation-error,.eq-ie11 .customer-info-page .date-birth-text .field-validation-error,.lt-ie11 .registration-page .date-birth-text .field-validation-error,.eq-ie11 .registration-page .date-birth-text .field-validation-error{margin-left:10px;}
-.lt-ie11 .header-selectors-wrapper select{border:1px solid #33393e !important;background:#F8F8F8 !important;}
+.lt-ie11 .header-selectors-wrapper select{border:1px solid #33393e !important;background:#f6f5f1 !important;}
 
 /* OPERA STYLE */
 doesnotexist:-o-prefocus, .forum-search-box .btn.search-box-button {padding:15px 19px;}
