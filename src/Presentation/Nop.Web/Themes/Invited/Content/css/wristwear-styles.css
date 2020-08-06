@@ -3,7 +3,9 @@
  * Copyright 2019 Xcellence-IT.
  * Licensed under LICENSETYPE (http://www.nopaccelerate.com/terms/)
  */
-
+.container {
+  width: 100%;
+}
 /* Web Styles for Wristwear Theme */
 body{font-family:'Montserrat', sans-serif;background:#fff;color:#333;}
 ul{margin:0px;padding:0px;}
@@ -21,10 +23,10 @@ li{list-style:none;}
 a:focus{outline:none;}
 .form-control{border-radius:0;}
 input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focus{outline:none;}
-.master-column-wrapper{margin-top:30px;}
-.master-wrapper-content {
+/*.master-column-wrapper{margin-top:30px;}*/
+/*.master-wrapper-content {
   margin-top: 30px;
-}
+}*/
 
 
 /* ADMIN HEADER LINKS */
@@ -212,6 +214,8 @@ input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focu
 .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu.sub-menusublist.first-level li .dropdown-menu.sub-menusublist.first-level li.dropdown:hover .dropdown-menu.sub-menusublist.first-level{display:block;top:13px;left:197px;opacity:1;visibility:visible;}*/
   .slider-wrapper.theme-custom {
     margin-top: 0px;
+    padding:10px 0;
+    background:white;
     display: none;
   }
 #index-page .slider-wrapper.theme-custom{display:block;margin-bottom:20px;}
@@ -378,12 +382,10 @@ input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focu
 .owl-prev:hover {background:url("../images/previous-arrow.png") no-repeat scroll 0px -70px !important;}
 .crosssell-products-slider .owl-nav,.also-purchased-products-grid .owl-nav,.related-products-grid .owl-nav,.product-grid.home-page-product-grid .owl-nav,.product-grid.bestsellers .owl-nav{top:35%;}
 .product-grid.cross-sells{margin-top:20px;}
-
-
-
-
 /* CATEGORY BOX STYLE*/
-.product-category-item .picture{position: relative;}
+.product-category-item .picture {
+  position: relative;
+}
 .product-category-item .picture .product-img::before{
     background-color: rgba(255, 255, 255, 0.5);
     bottom: 8%;
@@ -720,12 +722,17 @@ input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focu
 .topic-html-content a:hover{color:#333;}
 .not-found-page .page-body.from-panel{clear:both;}
 .panel-body{padding:0;}
-.topic-html-content{border:1px solid #ddd;}
-.topic-html-content .panel-heading{margin-bottom:0px;padding:15px;}
+.topic-html-content{
+    background:white;
+    width:100%
+}
+.topic-html-content .panel-heading {
+  margin-bottom: 0px;
+  padding: 15px;
+}
 .topic-page .page-body img,.topic-html-content .topic-html-content-body img,.category-description img,.manufacturer-description img,.product-details-tabs #description img,.news-item-page .news-body img,.blogpost-page .post-body img{width: 100%;height:auto;}
 .page.topic-page{padding:15px;}
 .page.topic-page .panel-heading h1{text-align:center;}
-.home-page .topic-html-content{margin-bottom:50px;}
 .order-summary-content .terms-of-service > p label {
     font-weight: normal !important;
 }
