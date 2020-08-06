@@ -1,4 +1,4 @@
-﻿<div class="header" style="border-bottom: #787878 1px solid">
+﻿<div class="header" style="border-bottom: #DCDCDC 2px solid; width:100%;">
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderBefore })
     <div class="header-upper"  style="background:#f6f5f1">
         <div class="container">
@@ -21,23 +21,21 @@
     </div>
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMiddle })
     <div class="header-lower"  style="background:#f6f5f1">
-        <div class="container">
+        <div class="container" style="width:100%;">
             <div class="row">
                 <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
                     <div class="header-logo">
                         @await Component.InvokeAsync("Logo")
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
-                    <div class="header-menu">
+
+                <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 " >
+                    <div class="header-menu" style="background:transparent;">
                         @await Component.InvokeAsync("TopMenu")
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                    <div class="search-box">
-                        @await Component.InvokeAsync("SearchBox")
-                    </div>
-                </div>
+
+               
             </div>
         </div>
     </div>

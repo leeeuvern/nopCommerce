@@ -23,6 +23,7 @@
     }
 }
 @media (min-width:992px) and (max-width:1199px){
+    .main-nav > li > a{padding:20px 15px;}
     .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.active > a,.header-menu .navbar.navbar-inverse .nav.navbar-nav > li > a{padding:20px 15px;}
     .lt-1024 body .responsive {display: none;}
     .lt-1024 body .header-links{margin-top:0px;}
@@ -90,6 +91,7 @@
     .header-upper-right{float:none !important;}
     .shopping-cart-link > a{border:none;}
     .main-menu.goToTop .navbar.navbar-inverse.category-menu{margin: 0 auto;width: 720px !important;}
+    .main-nav li > a{font-size:12px;padding:7px 12px;}
     .header-menu .navbar.navbar-inverse .nav.navbar-nav li > a{font-size:12px;padding:7px 12px;}
     .header-menu .navbar.navbar-inverse .nav.navbar-nav li.active > a{font-size:12px;padding:7px 12px;}
     #index-page .slider-wrapper.theme-custom{width:100%;max-width:100%;}
@@ -199,14 +201,7 @@
     .profile-page .profile-info-box .user-details .send-pm-box a {
         padding: 10px 68px;
     }
-  .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.active > a {
-    background: #35435d;
-    color: #fff;
-    padding: 20px 22px;
-    border-top: 2px solid #35435d;
-    border-bottom: 2px solid #35435d;
-    color: #ddd;
-  }
+    
   .header-menu .navbar.navbar-inverse .nav.navbar-nav > li > a:hover {
     border-top: 2px solid #35435d;
     border-bottom: 2px solid #35435d;
@@ -259,6 +254,8 @@
     .order-summary-content .checkout-attributes dl dd {margin-right:15px;}
 }
 @media (max-width:767px) {
+    
+        .main-nav { justify-content:center; }
     .registration-page .form-horizontal .form-group .radio-inline:first-child span {margin-right:15px;}
     .order-summary-content .checkout-attributes dl dt, .order-summary-content .checkout-attributes dl dd {
         width:100%;

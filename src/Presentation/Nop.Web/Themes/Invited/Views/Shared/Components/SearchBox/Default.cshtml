@@ -1,6 +1,6 @@
 ﻿@model SearchBoxModel
 <form asp-route="ProductSearch" method="get" id="small-search-box-form">
-    <div class="form-group">
+    <div class="form-group" style="margin:0;padding:5px">
         <input type="text" class="search-nav form-control" id="small-searchterms" autocomplete="off" placeholder="@T("Search.SearchBox.Tooltip")" name="q" aria-label="@T("Search.SearchBox.Text.Label")" />
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.SearchBoxBeforeSearchButton })
         <input type="submit" class="btn search-box-button" value="" />
