@@ -5,6 +5,8 @@
  */
 .container {
   width: 100%;
+  padding-top:15px;
+  padding-bottom:15px;
 }
 /* Web Styles for Wristwear Theme */
 body{font-family:'Montserrat', sans-serif;background:#fff;color:#333;}
