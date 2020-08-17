@@ -30,7 +30,7 @@ body {
 .item-box .product-item {
   background: transparent !important;
 }
-.home-page .wishlist-compare-wrapper{
+ .wishlist-compare-wrapper{
     display:none;
 }
 .home-page .row p {
