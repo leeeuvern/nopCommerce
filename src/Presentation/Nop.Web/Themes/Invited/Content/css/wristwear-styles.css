@@ -13,19 +13,19 @@ body {
   background: #fff;
   color: #333;
 }
-.home-page .thumbnail {
+.thumbnail {
   border: none !important;
 }
 
-.home-page .item-box .thumbnail .picture {
+.item-box .thumbnail .picture {
   min-height: inherit !important;
   background: transparent !important;
 }
 
-.home-page .item-box.product-grid .thumbnail .caption {
+.item-box.product-grid .thumbnail .caption {
   background: transparent !important;
 }
-.home-page .item-box .product-item {
+.item-box .product-item {
   background: transparent !important;
 }
 .home-page .wishlist-compare-wrapper{
