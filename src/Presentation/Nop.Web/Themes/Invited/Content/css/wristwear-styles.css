@@ -13,7 +13,28 @@ body {
   background: #fff;
   color: #333;
 }
-ul{margin:0px;padding:0px;}
+.home-page .thumbnail {
+  border: none !important;
+}
+
+.home-page .item-box .thumbnail .picture {
+  min-height: inherit !important;
+  background: transparent !important;
+}
+
+.home-page .item-box.product-grid .thumbnail .caption {
+  background: transparent !important;
+}
+.home-page .item-box .product-item {
+  background: transparent !important;
+}
+.home-page .wishlist-compare-wrapper{
+    display:none;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
 li{list-style:none;}
 .subscribe-button, a:hover,a,.owl-prev,.owl-next,.login-page .remember-me .checkbox label,.shopping-cart-link > a .fa.fa-shopping-cart{transition:all 0.3s ease-in-out 0s;-webkit-transition:all 0.3s ease-in-out 0s;-moz-transition:all 0.3s ease-in-out 0s;-o-transition:all 0.3s ease-in-out 0s;text-decoration:none;}
 .admin-header-links{background: #cc9900;text-align: center;}
@@ -219,7 +240,7 @@ input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focu
 .header-menu .navbar.navbar-inverse .nav.navbar-nav > li.dropdown .dropdown-menu.sub-menusublist.first-level li .dropdown-menu.sub-menusublist.first-level li.dropdown:hover .dropdown-menu.sub-menusublist.first-level{display:block;top:13px;left:197px;opacity:1;visibility:visible;}*/
   .slider-wrapper.theme-custom {
     margin-top: 0px;
-    padding:10px 0;
+    padding:10px 0 0 0;
     background:white;
     display: none;
   }
