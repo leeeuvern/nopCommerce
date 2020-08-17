@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 .container {
   width: 100%;
+  padding-top:15px;
+  padding-bottom:15px;
 }
 /* Web Styles for Wristwear Theme */
 body {
