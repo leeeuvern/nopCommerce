@@ -33,6 +33,11 @@ body {
 .home-page .wishlist-compare-wrapper{
     display:none;
 }
+.home-page .row p {
+   font-size:13pt;
+   text-align:justify;
+}
+
 ul {
   margin: 0px;
   padding: 0px;
