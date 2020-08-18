@@ -225,7 +225,7 @@ input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focu
   display: flex;
   flex-wrap: wrap;
   background: transparent;
-  justify-content: right;
+  float: right;
 }
 
   .main-nav > li.active > a {

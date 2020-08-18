@@ -255,7 +255,7 @@
 }
 @media (max-width:767px) {
     
-        .main-nav { justify-content:center; }
+        .main-nav { justify-content:center;float:none }
     .registration-page .form-horizontal .form-group .radio-inline:first-child span {margin-right:15px;}
     .order-summary-content .checkout-attributes dl dt, .order-summary-content .checkout-attributes dl dd {
         width:100%;
