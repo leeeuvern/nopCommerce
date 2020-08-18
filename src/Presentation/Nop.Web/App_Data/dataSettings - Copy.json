@@ -1,0 +1,6 @@
+﻿{
+  "DataConnectionString": "Data Source=EE\\SQLEXPRESS;Initial Catalog=nopdemo;user=EE\\yongs;Integrated Security=SSPI;",
+  "DataProvider": "sqlserver",
+  "SQLCommandTimeout": null,
+  "RawDataSettings": {}
+}

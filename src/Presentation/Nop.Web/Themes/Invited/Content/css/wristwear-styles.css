@@ -5,7 +5,7 @@
  */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 
-.html-home-page .master-wrapper-content {
+.html-home-page .master-wrapper-content, #our-products-page .master-wrapper-content, #about-us-page .master-wrapper-content, #all-page .master-wrapper-content {
   max-width: 80%;
   /*border: 2px #E8E8E8 solid;*/
   background: white;
