@@ -4,7 +4,7 @@
 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.BodyStartHtmlTagAfter })
 @await Html.PartialAsync("_Notifications")
 
-<div class="master-wrapper-page"  style="background:#f6f5f1">
+<div class="master-wrapper-page"  @*style="background:#f6f5f1"*@>
         @await Html.PartialAsync("_JavaScriptDisabledWarning")
         @await Html.PartialAsync("_OldInternetExplorerWarning")
         <div class="admin-header-link">
