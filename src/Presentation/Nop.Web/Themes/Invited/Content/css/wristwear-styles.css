@@ -10,7 +10,10 @@
   background: white;
   margin: 20px auto 0 auto;
 }*/
-.master-wrapper-content{
+.master-wrapper-page{
+    background:white!important;
+}
+.master-wrapper-content {
   max-width: 80%;
   background: white;
   margin: 20px auto 0 auto;

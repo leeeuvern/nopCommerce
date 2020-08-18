@@ -74,7 +74,7 @@
     .listbox,.lt-ie9 .listbox,.footer-middle .nav.nav-list,.lt-ie9 .nav.nav-list{display:none;}
     .side-content{clear:both;}
     .sidebar .title{background:url("../images/toggle-down-arrow.png") no-repeat #35435d  right center;font-size:16px;padding:15px;cursor:pointer;border-bottom:1px solid #ddd;box-shadow:0 -3px 5px #aaaaaa;-moz-box-shadow:0 -3px 5px #aaa;-web-box-shadow:0 -3px 5px #aaaaaa;}
-    .sidebar .title.arrow-up-down{background:url("../images/toggle-up-arrow.png") no-repeat #fff right center;}
+    .sidebar .title.arrow-up-down{background:url("../images/toggle-up-arrow.png") no-repeat #35435d right center;}
     .box-shadow-wrapper{width:49%;margin-right:2%;}
     .lt-ie9 .box-shadow-wrapper{width:48%;margin-right:2%;}
     .box-shadow-wrapper:nth-child(2n){margin-right:0px;}
