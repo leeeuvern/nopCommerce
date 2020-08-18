@@ -4,6 +4,13 @@
  * Licensed under LICENSETYPE (http://www.nopaccelerate.com/terms/)
  */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+.home-page .master-wrapper-content {
+  max-width: 80%;
+  /*border: 2px #E8E8E8 solid;*/
+  background: white;
+  margin: 20px auto 0 auto;
+}
 .container {
   width: 100%;
   padding-top:15px;

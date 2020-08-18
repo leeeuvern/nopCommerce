@@ -475,8 +475,8 @@
     .wishlist-content .panel.panel-default table tr th, .order-summary-content .panel.panel-default table tr th{text-align:center;}
     .wishlist-page .wishlist-small-wrapper > td, .shopping-cart-page .shopping-cart-small-wrapper > td, .checkout-page .shopping-cart-small-wrapper > td {border: medium none;padding: 0;width: 100%;}
     .wishlist-page .panel > .table-bordered > tbody > tr:last-child > td, .order-summary-content .panel > .table-bordered > tbody > tr:last-child > td {border-bottom: none;}
-    .wishlist-content .panel.panel-default table tbody tr, .order-summary-content .panel.panel-default.cart-item-table table tbody tr {border-top:none;background:#f5f5f5;}
-    .order-summary-content .product-wrapper .product a, .wishlist-content .product-wrapper .product a {color: #fff;font-weight: 700;display:block;}
+    .wishlist-content .panel.panel-default table tbody tr, .order-summary-content .panel.panel-default.cart-item-table table tbody tr {border-top:none;background:white;}
+    .order-summary-content .product-wrapper .product a, .wishlist-content .product-wrapper .product a {color: black;font-weight: 700;display:block;}
     .order-summary-content .product-wrapper .product a:hover, .wishlist-content .product-wrapper .product a:hover{color:#333;}
     .shopping-cart-page .order-summary-content .qty-input.form-control,.wishlist-page .wishlist-content .qty-input.form-control{ padding:0px; text-align:center;vertical-align:middle;}
     .remove-addtocart-checkbox .remove-from-cart{color:#666;}
