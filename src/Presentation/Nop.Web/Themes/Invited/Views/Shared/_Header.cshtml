@@ -42,14 +42,17 @@
         </div>*@
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderAfter })
 
+
     <div class="header1" data-spy="affix" data-offset-top="60">
         <div class="header-logo">@await Component.InvokeAsync("Logo")</div>
-            @await Component.InvokeAsync("TopMenu")
-            @*<li><a href="#">Home</a></li>
+        @await Component.InvokeAsync("TopMenu")
+        @*<li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>*@
     </div>
 
+
+    
 </div>
 

@@ -6,18 +6,28 @@
     var dataTransition = ViewData["dataTransition"]?.ToString() ?? "";
     var text = ViewData["text"]?.ToString() ?? "";
     var alttext = ViewData["alttext"]?.ToString() ?? "";
-
+    var active = ViewData["active"]?.ToString() ?? "";
     if (!string.IsNullOrEmpty(pictureUrl))
     {
         if (!string.IsNullOrEmpty(link))
         {
-            <a href="@link" aria-label="@alttext">
-                <img src="@pictureUrl" data-thumb="@pictureUrl" data-transition="@dataTransition" alt="@alttext" title="@text" />
-            </a>
+            <div class="item @active">
+                <img src="@pictureUrl" data-thumb="@pictureUrl" alt="@alttext" style="width:100%;">
+                <div class="carousel-caption">
+                    <h3>@alttext</h3>
+                    <p>@text</p>
+                </div>
+            </div>
         }
         else
         {
-            <img src="@pictureUrl" data-thumb="@pictureUrl" data-transition="@dataTransition" alt="@alttext" title="@text" />
+            <div class="item @active">
+                <img src="@pictureUrl" data-thumb="@pictureUrl" alt="@alttext" style="width:100%;">
+                <div class="carousel-caption">
+                    <h3>@alttext</h3>
+                    <p>@text</p>
+                </div>
+            </div>
         }
     }
 }

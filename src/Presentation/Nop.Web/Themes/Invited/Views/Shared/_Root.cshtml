@@ -4,20 +4,20 @@
 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.BodyStartHtmlTagAfter })
 @await Html.PartialAsync("_Notifications")
 
-<div class="master-wrapper-page"  @*style="background:#f6f5f1"*@>
+    <div class="master-wrapper-page" @*style="background:#f6f5f1"*@>
         @await Html.PartialAsync("_JavaScriptDisabledWarning")
         @await Html.PartialAsync("_OldInternetExplorerWarning")
         <div class="admin-header-link">
             <ul>
                 @await Component.InvokeAsync("AdminHeaderLinks")
             </ul>
-        </div>    
+        </div>
         @await Html.PartialAsync("_Header")
         <script asp-location="Footer">
             AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
-        </script>        
+        </script>
+        @await Component.InvokeAsync("Widget", new { widgetZone = "home_page_top" })
         <div class="master-wrapper-content">
-            @await Component.InvokeAsync("Widget", new { widgetZone = "home_page_top" })
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -42,7 +42,7 @@
         @await Component.InvokeAsync("Footer")
         @* Use this content for back to top page scrolling *@
         <div id="backTop"></div>
-</div>
+    </div>
 @await Component.InvokeAsync("EuCookieLaw")
 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.BodyEndHtmlTagBefore })
 

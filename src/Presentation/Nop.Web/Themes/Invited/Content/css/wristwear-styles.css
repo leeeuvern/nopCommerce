@@ -9,13 +9,26 @@
   background: white;
   margin: 20px auto 0 auto;
 }*/
+#myCarousel {
+  margin-top: -74.7px;
+}
 
+.carousel-indicators li.active {
+  background: #35435d;
+}
+.carousel-indicators li {
+  background: #f4f4f4;
+}
+.carousel-control {
+  background-image: none !important;
+}
 .affix {
+  position: fixed !important;
   top: 0;
   width: 100%;
-  z-index: 9999 !important;
-  background: #f8f8f8 !important;
-  transition: ease-in-out 5s background;
+  z-index: 9999;
+  background: rgba(255,255,255,0.7) !important;
+  transition: ease-in-out 1s background;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -46,12 +59,13 @@
     }
 
 .header1 {
-  background-color: #f4f4f4;
+    z-index:100;
+    position:relative;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  width:100%;
-  background:white;
+  width: 100%;
+  background: transparent;
 }
 
 /* ================================= 
