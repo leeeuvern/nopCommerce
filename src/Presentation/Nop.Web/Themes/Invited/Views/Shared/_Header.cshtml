@@ -1,4 +1,4 @@
-﻿<div class="header" style="border-bottom: #DCDCDC 2px solid; width:100%;">
+﻿<div class="header" @*style="border-bottom: #DCDCDC 2px solid; width:100%;"*@>
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderBefore })
     <div class="header-upper" style="background:#f6f5f1;">
         <div class="container" style="padding-top:0">
@@ -42,7 +42,7 @@
         </div>*@
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderAfter })
 
-    <div class="header1" >
+    <div class="header1" data-spy="affix" data-offset-top="60">
         <div class="header-logo">@await Component.InvokeAsync("Logo")</div>
             @await Component.InvokeAsync("TopMenu")
             @*<li><a href="#">Home</a></li>
