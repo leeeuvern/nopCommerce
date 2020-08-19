@@ -3,13 +3,71 @@
  * Copyright 2019 Xcellence-IT.
  * Licensed under LICENSETYPE (http://www.nopaccelerate.com/terms/)
  */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
 /*.html-home-page .master-wrapper-content, #our-products-page .master-wrapper-content, #about-us-page .master-wrapper-content, #all-page .master-wrapper-content {
   max-width: 80%;
   background: white;
   margin: 20px auto 0 auto;
 }*/
+
+.main-nav1 {
+  margin-top: 5px;
+}
+
+.header-logo img {
+  padding: 5px 15px;
+}
+  .main-nav1 a {
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+  }
+
+  .main-nav1 a {
+    color: #34495e;
+    font-size: 1.3em;
+  }
+
+    .main-nav1 a:hover {
+      color: #718daa;
+    }
+
+.header1 {
+  background-color: #f4f4f4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width:100%;
+  background:white;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+.main-nav1 {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+@media (min-width: 769px) {
+
+  .header1 {
+    display: flex;
+  }
+  .header1 {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header1 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .master-wrapper-page{
     background:white!important;
 }
@@ -26,8 +84,7 @@
 }
 /* Web Styles for Wristwear Theme */
 body {
-  font-family: 'Noto Serif JP', sans-serif;
-  background: #fff;
+  font-family: 'Baloo Tamma 2', sans-serif; background: #fff;
   color: #333;
 }
 .thumbnail {
@@ -49,8 +106,9 @@ body {
     display:none;
 }
 .row p {
-   font-size:13pt;
-   text-align:justify;
+  font-size: 1.3em;
+  text-align: justify;
+  color: #585858;
 }
 
 ul {
@@ -104,7 +162,7 @@ input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focu
 .search-box .ui-widget-content{border-radius:0px;border:1px solid #ddd;padding:0px;}
 .search-box .ui-autocomplete li:first-child{border:none;}
 .header-lower .ui-autocomplete li{border-top:1px dashed #bbb;float:left;width:100%;}
-.header-lower .ui-autocomplete li a{padding:10px;border-radius:0px;font-family: 'Noto Serif JP', sans-serif;font-size:12px;background:#f5f5f5;cursor:pointer;float:left;width:100%;}
+.header-lower .ui-autocomplete li a{padding:10px;border-radius:0px;font-family: 'Baloo Tamma 2', sans-serif;font-size:12px;background:#f5f5f5;cursor:pointer;float:left;width:100%;}
 .header-lower .ui-autocomplete li a:hover{color:#35435d;}
 .header-lower .ui-autocomplete img{display: block;float: left;min-width: 30px;margin-right:10px;}
 .header-lower .ui-menu .ui-menu-item a.ui-state-focus,.header-lower  .ui-menu .ui-menu-item a.ui-state-active{margin:0px;border:none;}
@@ -1340,7 +1398,7 @@ label {font-weight:700 !important;}
 .order-completed-page .section.order-completed,.order-completed-page .panel-heading h1{text-align:center;}
 
 /* CHECKOUT PAGE READ LINK POPUP */
-.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable{font-family:'Noto Serif JP', sans-serif;border:none!important;}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable{font-family:'Baloo Tamma 2', sans-serif;border:none!important;}
 .ui-corner-all{border-radius:0px!important;}
 .ui-dialog{padding:0!important;}
 .ui-widget-header{background:#35435d!important;color:#35435d!important;border:none!important;}
@@ -1913,7 +1971,7 @@ input[type=file] {width:100%;}
 
 /* BBCODES */
 pre{white-space:pre-wrap;white-space:normal;word-wrap:break-word;}
-.csharpcode,.csharpcode pre{font-size:small;color:#000;font-family:Consolas,"Noto Serif JP",Courier,Monospace;background-color:#35435d;}
+.csharpcode,.csharpcode pre{font-size:small;color:#000;font-family:Consolas,"Baloo Tamma 2",Courier,Monospace;background-color:#35435d;}
 .csharpcode pre{margin:0;}
 .csharpcode .rem{color:green;}
 .csharpcode .kwrd{color:#00f;}

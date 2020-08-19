@@ -1,6 +1,6 @@
 ﻿<div class="header" style="border-bottom: #DCDCDC 2px solid; width:100%;">
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderBefore })
-    <div class="header-upper"  style="background:#f6f5f1;">
+    <div class="header-upper" style="background:#f6f5f1;">
         <div class="container" style="padding-top:0">
             <div class="row">
                 <div class="col-md-4">
@@ -20,24 +20,36 @@
         </div>
     </div>
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMiddle })
-    <div class="header-lower"  style="background:#f6f5f1">
-        <div class="container" style="width:100%;">
-            <div class="row">
-                <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
-                    <div class="header-logo">
-                        @await Component.InvokeAsync("Logo")
-                    </div>
-                </div>
 
-                <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 " >
-                    <div class="header-menu" style="background:transparent;">
-                        @await Component.InvokeAsync("TopMenu")
+    @*<div class="header-lower" style="background:#f6f5f1">
+            <div class="container" style="width:100%;">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+                        <div class="header-logo">
+                            @await Component.InvokeAsync("Logo")
+                        </div>
                     </div>
-                </div>
 
-               
+                    <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 ">
+                        <div class="header-menu" style="background:transparent;">
+                            @await Component.InvokeAsync("TopMenu")
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
-        </div>
-    </div>
+        </div>*@
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderAfter })
+
+    <div class="header1" >
+        <div class="header-logo">@await Component.InvokeAsync("Logo")</div>
+            @await Component.InvokeAsync("TopMenu")
+            @*<li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>*@
+    </div>
+
 </div>
+

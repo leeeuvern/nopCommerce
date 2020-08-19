@@ -1,0 +1,6 @@
+﻿{
+  "DataConnectionString": "Data Source=34.87.184.57;Initial Catalog=nopdemo;user=Worldpossa;password=World99!",
+  "DataProvider": "sqlserver",
+  "SQLCommandTimeout": null,
+  "RawDataSettings": {}
+}
