@@ -40,7 +40,7 @@ namespace Nop.Plugin.Widgets.NivoSlider
         /// <returns>Widget zones</returns>
         public IList<string> GetWidgetZones()
         {
-            return new List<string> { PublicWidgetZones.HomepageTop };
+            return new List<string> { PublicWidgetZones.HomepageBeforeCategories };
         }
 
         /// <summary>

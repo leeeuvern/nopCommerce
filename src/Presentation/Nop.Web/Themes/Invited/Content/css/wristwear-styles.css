@@ -107,6 +107,17 @@
   background: white;
   margin: 20px auto 0 auto;
 }
+.master-wrapper-main .center-3 {
+  float: left;
+  width: 510px;
+  min-height: 400px;
+  padding: 10px;
+  margin: 10px;
+  background: #FFF;
+  display: inline;
+  overflow: hidden;
+  border-radius: 5px;
+}
 
 .container {
   width: 100%;
@@ -509,7 +520,7 @@ input[type="file"]:focus, input[type="checkbox"]:focus, input[type="radio"]:focu
 .box-shadow-wrapper .listbox ul li .sublist li .sublist li .sublist li a{padding:15px 0px 15px 78px;background:url(../images/submenu-list-deactive-icon.png) no-repeat 60px center;}
 .box-shadow-wrapper .listbox ul li .sublist li .sublist li .sublist li a:hover,.box-shadow-wrapper .listbox ul li .sublist li .sublist li .sublist li.active.last > a{background:url(../images/submenu-list-active-icon.png) no-repeat transparent 60px center;}
 .box-shadow-wrapper .listbox .view-all,.block.block-poll.well.box-shadow-wrapper .buttons{float: left;margin-top:10px;margin-bottom:10px;width:100%;}
-.box-shadow-wrapper .listbox .view-all a,.box-shadow-wrapper .listbox .vote-poll-button{background:#35435d;color:#35435d;padding:8px 10px;font-size:14px;font-weight:700;float:left;margin-bottom:10px;}
+.box-shadow-wrapper .listbox .view-all a,.box-shadow-wrapper .listbox .vote-poll-button{background:#f5f5f5;color:#35435d;padding:8px 10px;font-size:14px;font-weight:700;float:left;margin-bottom:10px;}
 .box-shadow-wrapper .listbox .view-all a:hover,.box-shadow-wrapper .listbox .vote-poll-button:hover{background:#35435d;text-decoration:none;}
 .block.block-popular-tags.box-shadow-wrapper .listbox ul li a{float:left;width:auto;border-bottom:none;padding:0px;font-size:100% !important;margin-right:5px;}
 .block.block-popular-tags.box-shadow-wrapper .listbox .tags{padding:10px 0px;float:left;width:100%;}

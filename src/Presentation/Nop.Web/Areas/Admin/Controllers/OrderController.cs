@@ -951,10 +951,10 @@ namespace Nop.Web.Areas.Admin.Controllers
 
             //a vendor should have access only to his products
             var vendorId = 0;
-            if (_workContext.CurrentVendor != null)
-            {
-                vendorId = _workContext.CurrentVendor.Id;
-            }
+          //  if (_workContext.CurrentVendor != null)
+            //{
+             //   vendorId = _workContext.CurrentVendor.Id;
+            //}
 
             var order = _orderService.GetOrderById(orderId);
             var orders = new List<Order>
