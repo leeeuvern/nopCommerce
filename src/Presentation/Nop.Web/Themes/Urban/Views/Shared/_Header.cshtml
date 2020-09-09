@@ -1,0 +1,22 @@
+﻿@using Nop.Core
+@using Nop.Services.Configuration
+
+@inject IStoreContext storeContext
+@inject ISettingService settingService
+
+@{
+    var isMenuMobile = settingService.GetSettingByKey("urbanthemesettings.ismenumobile", false, storeContext.CurrentStore.Id, true);
+    var headerClass = isMenuMobile ? "mobile" : "normal";
+}
+
+<div class="header @headerClass">
+
+    @await Component.InvokeAsync("HeaderLinks")
+    
+    @if (isMenuMobile)
+    {
+        @await Component.InvokeAsync("Logo")
+    }
+
+    <div class="header-menu-opener">@T("SevenSpikes.Themes.Urban.Menu.Title")</div>
+</div>

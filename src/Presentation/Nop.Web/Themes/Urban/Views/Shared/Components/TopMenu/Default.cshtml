@@ -1,0 +1,128 @@
+﻿@model TopMenuModel
+
+@using Nop.Core
+@using Nop.Core.Domain
+@using Nop.Services.Configuration
+
+@inject IStoreContext storeContext
+@inject ISettingService settingService
+@inject StoreInformationSettings storeInformationSettings
+
+@{
+    var isRtl = this.ShouldUseRtlTheme();
+
+    var storeId = storeContext.CurrentStore.Id;
+
+    var facebookUrl = storeInformationSettings.FacebookLink;
+    var twitterLink = storeInformationSettings.TwitterLink;
+    var youTubeLink = storeInformationSettings.YoutubeLink;
+    var pinterestUrl = settingService.GetSettingByKey("urbanthemesettings.pinteresturl", String.Empty, storeId, true).ToLowerInvariant();
+    var vimeoUrl = settingService.GetSettingByKey("urbanthemesettings.vimeourl", String.Empty, storeId, true).ToLowerInvariant();
+    var removeCopyright = settingService.GetSettingByKey("urbanthemesettings.removecopyright", false, storeId, true);
+}
+
+<input type="hidden" value="@isRtl.ToString().ToLowerInvariant()" id="isRtlEnabled" />
+
+<ul class="top-menu">
+    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuBefore })
+    @{
+        var rootCategories = Model.Categories.Where(x => x.IncludeInTopMenu).ToList();
+    }
+    @if (rootCategories.Count > 0)
+    {
+        foreach (var category in rootCategories)
+        {
+            var categoryLineModel = new TopMenuModel.CategoryLineModel
+            {
+                Category = category
+            };
+            @await Html.PartialAsync("_CategoryLine.TopMenu", categoryLineModel)
+        }
+        <li class="social-icons">
+            <ul>
+                @if (!String.IsNullOrEmpty(facebookUrl))
+                {
+                    <li><a href="@facebookUrl" class="facebook" target="_blank"></a></li>
+                }
+                @if (!String.IsNullOrEmpty(twitterLink))
+                {
+                    <li><a href="@twitterLink" class="twitter" target="_blank"></a></li>
+                }
+                @if (!string.IsNullOrEmpty(pinterestUrl))
+                {
+                    <li><a href="@pinterestUrl" class="pinterest" target="_blank"></a></li>
+                }
+                @if (!string.IsNullOrEmpty(youTubeLink))
+                {
+                    <li><a href="@youTubeLink" class="youtube" target="_blank"></a></li>
+                }
+                @if (!string.IsNullOrEmpty(vimeoUrl))
+                {
+                    <li><a href="@vimeoUrl" class="vimeo" target="_blank"></a></li>
+                }
+            </ul>
+        </li>
+    }
+    else
+    {
+        //no categories to display? in this case let's diplay some default menu items (should we?)
+        <li><a href="@Url.RouteUrl("Homepage")">@T("Homepage")</a></li>
+        if (Model.NewProductsEnabled)
+        {
+            <li>
+                <a href="@Url.RouteUrl("NewProducts")">@T("Products.NewProducts")</a>
+            </li>
+        }
+        <li><a href="@Url.RouteUrl("ProductSearch")">@T("Search")</a> </li>
+        <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.MyAccount")</a></li>
+        if (Model.BlogEnabled)
+        {
+            <li><a href="@Url.RouteUrl("Blog")">@T("Blog")</a></li>
+        }
+        if (Model.ForumEnabled)
+        {
+            <li><a href="@Url.RouteUrl("Boards")">@T("Forum.Forums")</a></li>
+        }
+        <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
+        <li class="social-icons">
+            <ul>
+                @if (!String.IsNullOrEmpty(facebookUrl))
+                {
+                    <li><a href="@facebookUrl" class="facebook" target="_blank"></a></li>
+                }
+                @if (!String.IsNullOrEmpty(twitterLink))
+                {
+                    <li><a href="@twitterLink" class="twitter" target="_blank"></a></li>
+                }
+                @if (!string.IsNullOrEmpty(pinterestUrl))
+                {
+                    <li><a href="@pinterestUrl" class="pinterest" target="_blank"></a></li>
+                }
+                @if (!string.IsNullOrEmpty(youTubeLink))
+                {
+                    <li><a href="@youTubeLink" class="youtube" target="_blank"></a></li>
+                }
+                @if (!string.IsNullOrEmpty(vimeoUrl))
+                {
+                    <li><a href="@vimeoUrl" class="vimeo" target="_blank"></a></li>
+                }
+            </ul>
+        </li>
+    }
+    @foreach (var topic in Model.Topics)
+    {
+        <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name</a></li>
+    }
+    @await Component.InvokeAsync("Widget", new { widgetZone = "header_menu_after" })
+</ul>
+
+<script type="text/javascript" asp-location="Footer">
+    (function($, ssCore) {
+
+        $(document).ready(function () {
+
+            ssCore.prepareTopMenu();
+        });
+
+    })(jQuery, sevenSpikesCore);
+</script>
